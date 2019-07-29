@@ -9,9 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
   <title>Info Country</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
@@ -24,18 +24,25 @@
     </div>
     <div class="container text-center">
       <button type="button" class="btn btn-primary btn-lg" id="pickCountry">Pick Country : </button>
-      <button type="button" class="btn btn-primary btn-lg" id="geolocate">Geolocate</button>
+      <button type="button" class="btn btn-primary btn-lg" id="geolocate">Try Geolocate Me!</button>
     </div>
   </section>
-  <div class="container" id="dataMain">
+  <div class="container-fluid" id="dataMain">
     <div class="row">
-      <div class="col-8 mx-auto" id="dataCountries">
-        <img id="countryFlag" class="rounded mx-auto d-block img-fluid pt-3" src="" width="300">
-        <h3 class="pt-2 text-center" id="countryName">Country</h3>
-        <h4 class="text-center" id="countryCapital">Capital</h4>
-        <h5 class="text-center" id="countryPopulation">Population</h5>
+      <div class="col-12 col-sm-10 col-md-8 col-lg-4 mx-auto" id="dataCountries">
+        <h4 class="text-center pt-3 text-light">Country Flag</h4>
+        <img id="countryFlag" class="rounded mx-auto d-block img-fluid pt-3 pb-3" src="" width="300">
+      </div>
+      <div class="col-12 col-sm-10 col-md-8 col-lg-4 mx-auto" id="dataNews">
+        <h4 class="pt-3 text-center" id="countryName">Country:</h4>
+        <h4 class="text-center" id="countryCapital">Capital:</h4>
+        <h4 class="text-center" id="countryRegion">Region:</h4>
+        <h4 class="text-center" id="countrySubregion">Subregion:</h4>
+        <h5 class="text-center" id="countryPopulation">Population:</h5>
         <br>
-        <h6 class ="text-center mb-0">Data provided by restcountries.eu</h6>
+        <h5 class="text-center" id="countryTimezone">Timezone(s):</h5>
+        <br>
+        <h6 class ="text-center text-dark">Data provided by restcountries.eu</h6>
       </div>
     </div>
   <!--Leaflet map section-->
@@ -55,7 +62,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="/assets/js/main.js"></script>
+  <script src="./assets/js/restcountriesRequest.js"></script>
 </body>
 
 </html>
