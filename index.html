@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <!--Landing view section-->
-  <section id="landing-view">
+   <!--Landing view section-->
+   <section id="landing-view">
     <div class="container" id="name-logo">
       <a href="index.html">
         <h2>infoCountry</h2>
@@ -27,15 +27,17 @@
       <button type="button" class="btn btn-primary btn-lg" id="geolocate">Geolocate</button>
     </div>
   </section>
-  <!--Country data and news section-->
-  <section id="country-data">
-    <div class="container">
-      <div class="row">
-        <div class="col-4" id="country-data"></div>
-        <div class="col-8" id="news-data"></div>
+  <div class="container" id="dataMain">
+    <div class="row">
+      <div class="col-8 mx-auto" id="dataCountries">
+        <img id="countryFlag" class="rounded mx-auto d-block img-fluid pt-3" src="" width="300">
+        <h3 class="pt-2 text-center" id="countryName">Country</h3>
+        <h4 class="text-center" id="countryCapital">Capital</h4>
+        <h5 class="text-center" id="countryPopulation">Population</h5>
+        <br>
+        <h6 class ="text-center mb-0">Data provided by restcountries.eu</h6>
       </div>
     </div>
-  </section>
   <!--Leaflet map section-->
   <section id="leaflet-map">
     <div class="container-fluid"></div>
