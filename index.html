@@ -12,28 +12,19 @@
 
   <title>Info Country</title>
   <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="/assets/js/test.js"></script>
 </head>
 
 <body>
   <!--Landing view section-->
-  <section id="main">
-    <div class="container">
+  <section id="landing-view">
+    <div class="container" id="name-logo">
       <a href="index.html">
-        <h2>InfoCountry</h2>
+        <h2>infoCountry</h2>
       </a>
     </div>
-    <div class="container">
-      <div id="button-load-countries">
-        <a href="#country-data">
-          <p class="text-center pt-2">Click to load countries</p>
-        </a>
-      </div>
-      <div id="button-geolocate">
-          <a href="#country-data">
-            <p class="text-center pt-2">Try Geolocate</p>
-          </a>
-        </div>
+    <div class="container text-center">
+      <button type="button" class="btn btn-primary btn-lg" id="pickCountry">Pick Country : </button>
+      <button type="button" class="btn btn-primary btn-lg" id="geolocate">Geolocate</button>
     </div>
   </section>
   <!--Country data and news section-->
@@ -62,6 +53,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

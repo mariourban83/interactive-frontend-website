@@ -20,7 +20,7 @@ a,p {
  }
 
 /* Sets background image */
- #main {
+ #landing-view {
   background-image: url("/assets/images/bg-image.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,14 +38,26 @@ h2 {
   padding-top:50px;
   border-bottom: 3px dotted white; 
 }
-/*Styling for the custom button */
-#button-load-countries, #button-geolocate {
-   height : 40px;
-   width: 250px;
-   background-color: white;
-   margin-top: 20vh;
-   border-radius: 5px;
-   animation: shadow-pulse 2s 5;
+/*Styling for the custom buttons including pulsing effect  */
+#dataCountries {
+  background-color: white;
+  margin-top: 10vh;
+}
+#dataNews {
+  
+  background-color: white;
+  margin-top: 10vh;
+}
+
+#pickCountry, #geolocate, #dataNews {
+  color: rgb(0, 0, 0) !important;
+  font-family: "Poppins",sans-serif;
+  font-weight: 300;
+  background-color: #ffffff;
+  border-color: #007bff;
+  margin-top:10vh;
+  animation: shadow-pulse 1.5s 5;
+  max-width:90vw;
 }
 @keyframes shadow-pulse
 {
@@ -55,4 +67,7 @@ h2 {
   100% {
     box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
      }
+}
+#pickCountry > select {
+  max-width:80vw;
 }
