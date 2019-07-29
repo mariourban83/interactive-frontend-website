@@ -2,22 +2,29 @@
 <html lang="en">
 
 <head>
+    <title>Info Country</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-  <title>Info Country</title>
+  <!--Leaflet js-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+  <!--Custom CSS-->
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
    <!--Landing view section-->
    <section id="landing-view">
-    <div class="container" id="name-logo">
+    <div class="container " id="name-logo">
       <a href="index.html">
         <h2>infoCountry</h2>
       </a>
@@ -46,9 +53,20 @@
       </div>
     </div>
   <!--Leaflet map section-->
+  <br>
   <section id="leaflet-map">
-    <div class="container-fluid"></div>
+    <br>
+    <div class="container">
+      <h4 class= "text-center" id="countryOnMap">Selected country on the map</h4>
+    </div>
+    
+    <br>
+        <div id="mapid"></div>
   </section>
+  <br>
+  <footer>
+
+  </footer>
 
 
   <!-- Optional JavaScript -->
@@ -63,6 +81,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="./assets/js/restcountriesRequest.js"></script>
+  <script src="./assets/js/leafletMap.js"></script>
 </body>
 
 </html>

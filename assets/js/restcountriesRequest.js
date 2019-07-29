@@ -34,7 +34,6 @@ function displayData(d) {
   const countrySubregion = document.querySelector("#countrySubregion");
   const countryTimezone =  document.querySelector("#countryTimezone");
   let obj = dataCountries[d.target.value];
-  //countryOnMap(obj.latLng);
   countryName.innerHTML = '<h5>' + 'Country Name : ' + obj.name + '</h5>';
   countryCapital.innerHTML = '<h5>' + 'Country Capital : ' + obj.capital + '</h5>';
   countryRegion.innerHTML = '<h5>' + 'Country Region : ' + obj.region + '</h5>';
