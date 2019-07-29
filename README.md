@@ -1,5 +1,5 @@
-# infoCountry app- Usefull information about World countries in one place.
-## Milestone project 2 for Code Institute - Interactive Frontend Development Module.
+# Milestone project 2 for Code Institute - Interactive Frontend Development Module.
+## infoCountry app.  Usefull information about World countries in one place.
 
 .....This project is still under development....
 
