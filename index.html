@@ -57,7 +57,14 @@
     </div>
     
     <br>
-        <div id="mapid"></div>
+       <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaW91cmJhbiIsImEiOiJja2lvbnh3cG4wa2drMnpveWNsNWs5cTRxIn0.u3elN3N2NH32dHY7PWDZXg';
+            var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+            });
+        </script>
   </section>
   <br>
   <footer>
